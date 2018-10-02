@@ -31,6 +31,7 @@
             System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Gameplay", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Weapons", System.Windows.Forms.HorizontalAlignment.Left);
             System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Misc", System.Windows.Forms.HorizontalAlignment.Left);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.folderPath = new System.Windows.Forms.TextBox();
             this.gornFolderLabel = new System.Windows.Forms.Label();
             this.showDirectoryButton = new System.Windows.Forms.Button();
@@ -155,6 +156,7 @@
             this.Controls.Add(this.showDirectoryButton);
             this.Controls.Add(this.gornFolderLabel);
             this.Controls.Add(this.folderPath);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWindow";
             this.Text = "Meme Manager";
             this.Load += new System.EventHandler(this.MainWindow_Load);

@@ -93,14 +93,14 @@ namespace MemeMananger
 
         private void MainWindow_Load(object sender, EventArgs e)
         {
-            ListViewItem i = listViewMods.Items.Add("MemeManager");
+            /*ListViewItem i = listViewMods.Items.Add("MemeManager");
             i.Checked = true;
             i.SubItems.AddRange(new string[] { ".MemeMan", "" });
-            i.Group = listViewMods.Groups[0];
+            i.Group = listViewMods.Groups[0];*/
             
 
             SetPath((string)Properties.Settings.Default["gornFolder"], true, true);
-
+            SetStatus("Loaded");
         }
 
         private void installButton_Click(object sender, EventArgs e)
